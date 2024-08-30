@@ -25,6 +25,7 @@ def search(bot, trigger):
 
     if result is None:
         bot.reply("No results.")
+        return
 
     _, url = memedict.search_meme(query)
 
