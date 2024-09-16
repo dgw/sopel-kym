@@ -32,7 +32,7 @@ def search(bot, trigger):
     bot.say(result, truncation=' […]', trailing=' | ' + url)
 
 
-@plugin.url(r'https://knowyourmeme\.com/memes/([^/]+)')
+@plugin.url(r'https?://knowyourmeme\.com/memes/([^/?#]+)')
 @plugin.output_prefix(PLUGIN_PREFIX)
 def link(bot, trigger):
     query = trigger.group(1)
