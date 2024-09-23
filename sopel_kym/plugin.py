@@ -29,7 +29,10 @@ def search(bot, trigger):
 
     _, url = memedict.search_meme(query)
 
-    bot.say(result, truncation=' […]', trailing=' | ' + url)
+    # Sometimes the `url` will be None for some reason
+    # It's better to just output the `result` if it exists anyway, without
+    # linking back to the site, than to throw an error.
+    bot.say(result, truncation=' […]', trailing=(' | ' + url) if url else '')
 
 
 @plugin.url(r'https://knowyourmeme\.com/memes/([^/]+)')
