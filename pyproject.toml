@@ -14,7 +14,7 @@ readme = { file=["README.md", "NEWS"], content-type="text/markdown" }
 
 [project]
 name = "sopel-kym"
-version = "0.1.1"
+version = "0.1.2"
 description = "Meme definition plugin for Sopel IRC bots."
 
 authors = [
