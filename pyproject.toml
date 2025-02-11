@@ -14,7 +14,7 @@ readme = { file=["README.md", "NEWS"], content-type="text/markdown" }
 
 [project]
 name = "sopel-kym"
-version = "0.1.2"
+version = "0.1.3"
 description = "Meme definition plugin for Sopel IRC bots."
 
 authors = [
@@ -42,7 +42,7 @@ keywords = [
 requires-python = ">=3.8, <4"
 dependencies = [
   "sopel>=8.0",
-  "memedict~=1.0",
+  "culturgen~=0.1.0",
 ]
 
 [project.urls]

@@ -4,7 +4,7 @@ Meme definition plugin for Sopel IRC bots.
 """
 from __future__ import annotations
 
-import memedict
+import culturgen as memedict
 
 from sopel import plugin
 

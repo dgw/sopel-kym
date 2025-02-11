@@ -1,5 +1,13 @@
 ## Changelog
 
+### 0.1.3
+
+Changed:
+
+* Switch to my own `culturgen` library
+  * This plugin stopped returning results correctly, and `memedict` hasn't seen
+    any attention since 2018, so forking the package seemed justified.
+
 ### 0.1.2
 
 Changed:
